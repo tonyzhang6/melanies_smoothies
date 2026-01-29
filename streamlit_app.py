@@ -51,4 +51,7 @@ if ingredient_list:
 #if submitted:
 #    st.success("Someone clicked butoon.", icon='👍')
 
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
 
